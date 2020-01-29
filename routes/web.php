@@ -16,5 +16,11 @@ Route::get('/', function () {
 
 });
 Route::get('/korovka', function () {
-    return view('korovka');
+    $tasks = [
+        'Korovlusch',
+        'Korovka',
+        'Zaychik-mi-mi'
+        ];
+    return view('korovka', compact('tasks'));
+
 });
